@@ -46,8 +46,10 @@ const shuffle = (array) => {
 
 <template>
 
-  <div v-if="question" class="">
+  <div v-if="question" class="flex h-full w-full flex-col items-center gap-8 p-10">
 <BaseTitle> {{ question.category }}</BaseTitle>
+<!-- {{ question.question }} -->
+  <div v-html="question.question" class="text-center text-2xl font-bold"></div>
 
 
 <div v-for="answer in answer" v-html="answer.answer" :key="answer.id" class=""></div>
