@@ -6,6 +6,9 @@ import BaseTitle from '@/components/BaseTitle.vue';
 import DifficultyChip from '@/components/DifficultyChip.vue';
 
 
+
+
+
 const api = useAPI()
 const question = ref(null)
 const route = useRoute()
